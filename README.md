@@ -1,18 +1,14 @@
-# Zak Abdur-Rahman
+<p align="center">
+  <img src="profile-banner.svg" alt="Zak Abdur-Rahman - Mathematics, Physics and Quantitative Finance" width="100%">
+</p>
 
-Incoming Mathematics and Physics student at the University of Warwick.
+<p align="center">
+  Incoming Mathematics and Physics student at the University of Warwick,<br>
+  building tested models in market microstructure, derivatives and fixed-income risk.
+</p>
 
-Interested in quantitative research, systematic investing, derivatives and market microstructure. I enjoy turning mathematical ideas into small, testable Python models and checking whether the results survive sensible benchmarks.
-
-## Selected work
-
-- [Quantitative Finance Projects](https://github.com/zxk33/Quant-Finance-Projects) - market making, Monte Carlo derivatives pricing and fixed-income risk, with detailed mathematical notes and automated tests.
-- [Monte Carlo Options Pricing](https://github.com/zxk33/Monte-Carlo-Options-Pricing) - simulation, convergence analysis and Black-Scholes benchmarking.
-
-## Background
-
-Man Group AHL Quantitative Research Insight Day · Morningstar Summer Internship · Morgan Stanley Summer Academy
-
-Python · NumPy · pandas · Matplotlib · pytest
-
-[LinkedIn](https://www.linkedin.com/in/zakariya-abdur-rahman-7b67122a8/)
+<p align="center">
+  <a href="https://github.com/zxk33/Quant-Finance-Projects">Quant finance projects</a> ·
+  <a href="https://github.com/zxk33/Monte-Carlo-Options-Pricing">Options pricing</a> ·
+  <a href="https://www.linkedin.com/in/zakariya-abdur-rahman-7b67122a8/">LinkedIn</a>
+</p>

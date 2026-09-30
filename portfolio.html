@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Zakariya Abdur-Rahman — Mathematics and Physics at Warwick, quantitative finance projects and research.">
+<title>Zakariya Abdur-Rahman</title>
+<style>
+:root{--bg:#0b0d10;--panel:#111419;--text:#f2f3f5;--muted:#9ca3ad;--line:#232832;--accent:#a9b7c8;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}a:hover{color:white}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line);font-size:14px}
+.navlinks{display:flex;gap:20px;color:var(--muted)}.brand{font-weight:650;letter-spacing:-.01em}
+.hero{padding:92px 0 76px;border-bottom:1px solid var(--line)}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h1{font-size:clamp(42px,8vw,76px);line-height:.98;letter-spacing:-.045em;margin:0 0 26px;font-weight:680;max-width:900px}
+.hero p{font-size:19px;max-width:760px;color:var(--muted);margin:0 0 28px}
+.links{display:flex;flex-wrap:wrap;gap:12px}.chip{border:1px solid var(--line);padding:9px 13px;border-radius:999px;color:#d7dbe0;font-size:14px}
+section{padding:70px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-bottom:34px}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0}
+.section-intro{color:var(--muted);max-width:760px;margin:0}
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:linear-gradient(180deg,#101318,#0f1216);border:1px solid var(--line);border-radius:14px;padding:22px;min-height:220px;transition:border-color .18s ease,transform .18s ease}
+.card:hover{border-color:#39414d;transform:translateY(-2px)}
+.card .num{font-size:12px;color:#67717f;margin-bottom:22px}.card h3{font-size:20px;letter-spacing:-.02em;margin:0 0 8px}
+.card p{color:var(--muted);font-size:14px;margin:0 0 20px}.math{font-family:"SFMono-Regular",Consolas,monospace;font-size:12px;color:#c8d0da;background:#0a0c0f;border:1px solid var(--line);border-radius:8px;padding:10px 11px;margin:0 0 18px}
+.cardlinks{display:flex;gap:16px;font-size:13px;color:#d7dde5}.cardlinks a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:#46505d}
+.timeline{display:grid;gap:0}.row{display:grid;grid-template-columns:220px 1fr;gap:40px;padding:20px 0;border-top:1px solid var(--line)}.row:first-child{border-top:0}
+.when{font-size:13px;color:#788290}.role{font-weight:650;margin-bottom:3px}.desc{font-size:14px;color:var(--muted);max-width:730px}
+.distinctions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.dist{padding:16px 0;border-top:1px solid var(--line);font-size:15px}.dist span{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+footer{padding:38px 0 46px;color:#707985;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:64px 0 54px}.section-head,.row{grid-template-columns:1fr;gap:8px}.projects,.distinctions{grid-template-columns:1fr}section{padding:52px 0}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+<div class="brand">Zakariya Abdur-Rahman</div>
+<div class="navlinks"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#distinctions">Distinctions</a></div>
+</nav>
+
+<header class="hero">
+<div class="kicker">Mathematics · Physics · Quantitative Finance</div>
+<h1>Zakariya<br>Abdur-Rahman</h1>
+<p>First-year BSc Mathematics and Physics student at the University of Warwick, interested in quantitative investing, mathematical modelling and systematic research.</p>
+<div class="links">
+<a class="chip" href="https://github.com/zxk33" target="_blank" rel="noreferrer">GitHub</a>
+<a class="chip" href="https://www.linkedin.com/in/zakariya-abdur-rahman-7b67122a8/" target="_blank" rel="noreferrer">LinkedIn</a>
+<a class="chip" href="mailto:Zakariya.Abdur-Rahman@warwick.ac.uk">Warwick email</a>
+<a class="chip" href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/PROJECT_INDEX.md" target="_blank" rel="noreferrer">Project index</a>
+</div>
+</header>
+
+<section id="research">
+<div class="section-head">
+<h2>Selected research</h2>
+<p class="section-intro">Projects are intentionally transparent: the maths, assumptions, code, tests and limitations are visible. Synthetic-model results are labelled as such rather than presented as live-market performance.</p>
+</div>
+<div class="projects">
+
+<article class="card"><div class="num">01</div><h3>Cross-Sectional Equity Signals</h3><p>A simple framework for ranking equities using valuation, momentum and quality features, then testing a market-neutral long/short portfolio after turnover costs.</p><div class="math">z = (x − μ)/σ · score = mean(dₖzₖ) · Σw = 0</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/equity_signal_research.py">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/EQUITY_SIGNAL_MATHS.md">Maths</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/EQUITY_SIGNAL_RESEARCH.md">Method</a></div></article>
+
+<article class="card"><div class="num">02</div><h3>Walk-Forward Pairs Research</h3><p>Relative-value backtesting with rolling hedge-ratio estimation, z-score entries, transaction costs and explicit controls against look-ahead bias.</p><div class="math">yₜ = α + βxₜ + εₜ · zₜ = (εₜ − μₑ)/σₑ</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/pairs_research.py">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/PAIRS_RESEARCH_MATHS.md">Maths</a></div></article>
+
+<article class="card"><div class="num">03</div><h3>Market Making Under Uncertainty</h3><p>A simulation of dealer quoting under adverse selection, market shocks and inventory risk, comparing baseline and inventory-aware policies on matched random paths.</p><div class="math">quote skew ∝ inventory · paired Monte Carlo · risk/P&amp;L trade-off</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/market_making.py">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/MARKET_MAKING_MATHS.md">Maths</a></div></article>
+
+<article class="card"><div class="num">04</div><h3>Monte Carlo Derivatives Pricing</h3><p>European call and put pricing under risk-neutral geometric Brownian motion, with antithetic sampling and validation against Black–Scholes.</p><div class="math">S_T = S₀exp[(r−σ²/2)T + σ√T Z] · V = e⁻ʳᵀE[payoff]</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/derivatives_pricing.py">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/DERIVATIVES_PRICING_MATHS.md">Maths</a></div></article>
+
+<article class="card"><div class="num">05</div><h3>Bond Yield-Curve &amp; Risk Engine</h3><p>Fixed-income valuation tools for curve bootstrapping, yield to maturity, duration, convexity and repricing under parallel and shaped rate shocks.</p><div class="math">P = Σ CFₜ/(1+y)ᵗ · duration · convexity · ΔP/P</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/bond_risk_engine.py">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/BOND_RISK_ENGINE_MATHS.md">Maths</a></div></article>
+
+<article class="card"><div class="num">06</div><h3>Corporate Valuation</h3><p>A five-year DCF and comparables model with WACC/terminal-growth sensitivity and a simplified acquisition EPS framework.</p><div class="math">EV = Σ UFCFₜ/(1+WACC)ᵗ + TV/(1+WACC)ⁿ</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/corporate_finance/valuation.py">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/corporate_finance/MATHS.md">Maths</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/corporate_finance/README.md">Notes</a></div></article>
+
+<article class="card"><div class="num">07</div><h3>Inventory-Policy Research</h3><p>A held-out simulation study comparing quoting policies using matched controls, independent train/validation/test sets, stress cases and tail-risk metrics.</p><div class="math">Dⱼ = Xⱼ(policy) − Xⱼ(control) · D̄ = N⁻¹ΣDⱼ</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/quant_research/inventory_study.py">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/quant_research/MATHS.md">Maths</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/quant_research/README.md">Study</a></div></article>
+
+<article class="card"><div class="num">08</div><h3>Limit Order Book &amp; Data Pipeline</h3><p>Software-engineering work on price-time matching, partial fills and reproducible market-data ingestion with explicit invariants and rollback behaviour.</p><div class="math">best bid &lt; best ask · q_exec = min(q_incoming,q_resting)</div><div class="cardlinks"><a href="https://github.com/zxk33/Quant-Finance-Projects/tree/main/engineering">Code</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/engineering/MATHS.md">Maths</a><a href="https://github.com/zxk33/Quant-Finance-Projects/blob/main/engineering/README.md">Notes</a></div></article>
+
+</div>
+</section>
+
+<section id="experience">
+<div class="section-head"><h2>Experience</h2><p class="section-intro">Early exposure to investment research and systematic investing alongside independent technical work.</p></div>
+<div class="timeline">
+<div class="row"><div class="when">Jul–Aug 2025</div><div><div class="role">Morningstar — Summer Intern</div><div class="desc">Analysed historical fund performance, portfolio holdings and company fundamentals using Excel and Python, producing concise research outputs for investment discussions.</div></div></div>
+<div class="row"><div class="when">Jul 2026</div><div><div class="role">Man Group AHL — Quantitative Research Insight Day</div><div class="desc">Explored how systematic investment teams combine market data, statistical testing and machine-learning ideas to evaluate investment hypotheses.</div></div></div>
+<div class="row"><div class="when">Summer 2025</div><div><div class="role">Morgan Stanley — Summer Academy</div><div class="desc">Financial markets and analytical problem-solving programme.</div></div></div>
+</div>
+</section>
+
+<section id="distinctions">
+<div class="section-head"><h2>Distinctions</h2><p class="section-intro">Competitive mathematics and academic achievements.</p></div>
+<div class="distinctions">
+<div class="dist">British Mathematical Olympiad<span>Merit</span></div>
+<div class="dist">UKMT Senior Mathematical Challenge<span>Gold Award · Best in School</span></div>
+<div class="dist">Challenge ME Mathematics Olympiad<span>Gold Medal · Top 10 across MENA</span></div>
+<div class="dist">University of Warwick<span>BSc Mathematics and Physics · 2026–2029</span></div>
+</div>
+</section>
+
+<footer><span>Zakariya Abdur-Rahman</span><span>Mathematics · Physics · Quantitative Finance</span></footer>
+</div>
+</body>
+</html>

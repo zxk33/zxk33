@@ -18,3 +18,10 @@
 - Walk-forward pairs research using rolling OLS, cost-aware P&L and block-bootstrap uncertainty.
 - Corporate valuation engine covering DCF, sensitivity analysis, comparables and acquisition EPS.
 - Fixed-income curve/risk engine and market-making simulation with reproducibility tests.
+
+
+## Portfolio
+
+The recruiter-facing portfolio is served from `index.html` and is ready for static deployment on Vercel.
+
+[Deploy portfolio to Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzxk33%2Fzxk33&project-name=zakariya-portfolio&repository-name=zakariya-portfolio)
